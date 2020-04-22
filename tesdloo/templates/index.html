@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+          rel="stylesheet">
+  </head>
+  <body>
+   
+    <div class="container">
+      <div class="header">
+        <h3 >String Matching</h3>
+      </div>
+      <hr/>
+      <div>
+      
+      <form action="result" method="post" enctype="multipart/form-data">
+        <h4>Masukkan kata yang akan dicari</h4>
+        <input type="text" id="fname" name="fname"><br><br>
+        <h4>Pilih metoda:</h4>
+        <input type="radio" name="options" id="1" value="1"> Regex </input><br>
+      <input type="radio" name="options" id="2" value="2"> KMP </input><br>
+      <input type="radio" name="options" id="3" value="3"> BM </input><br>
+      <h4>Masukkan multiple File</h4>
+        <input type="file" multiple="" name="file[]" class="span3" /><br />
+        <input type="submit" value="Upload"  class="span2">
+      </form>
+      </div>
+    </div>
+  </body>
+</html>
+ 
