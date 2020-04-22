@@ -47,6 +47,8 @@ def result():
         s = text.match(tek,int(option))
         if(s!=None):
             string += '<p>Jumlah: ' +cetakInt(s)+ '  Waktu: '+ findAllTime(s) +'<br>Kalimat:<br>' + s +'<br>Nama File: '+ text.filename +'</p>'
+        else:
+            string +='<p>Jumlah: -  Waktu: <br>Kalimat:-<br>Nama File: '+ text.filename +'</p>'
     return '<h2>Result!</h2>' + string 
 
 
