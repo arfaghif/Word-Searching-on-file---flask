@@ -9,8 +9,9 @@ for i in range (N):
     l.append(Text(input("nama file ke-" + str(i+1)+":")))
 
 for text in l:
-    sentence = text.match("terkonfirmasi positif",met)
+    sentence = text.match("yang terkonfirmasi positif",met)
+    print(sentence)
     print("Jumlah :", end="" )
     print(MyRegex.findInteger(sentence)[0].replace(" ",""))
     print("date:",end="")
-    print(MyRegex.findDate(sentence)[0])
+    print(MyRegex.findAllTime(sentence))
